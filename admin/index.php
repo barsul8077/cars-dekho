@@ -37,17 +37,22 @@ if (!isset($_SESSION['admin'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="../assets/dashboard.css">
 </head>
 <body>
-    <button class="back-btn" onclick="window.history.back()">&#8592; Back</button>
-    <header class="main-header">
-        <div class="logo">Admin Panel</div>
-        <nav><a href="index.php?logout=1">Logout</a></nav>
-    </header>
-    <div class="admin-sections">
-        <h2>Manage Homepage Content</h2>
+    <div class="dashboard-header">
+        <div class="logo">Admin Dashboard</div>
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="header.php">Header</a>
+            <a href="banner.php">Banners</a>
+            <a href="cars.php">Cars</a>
+            <a href="footer.php">Footer</a>
+            <a href="index.php?logout=1">Logout</a>
+        </nav>
+    </div>
+    <div class="dashboard-container">
+        <h2 class="dashboard-title">Manage Homepage Content</h2>
         <ul>
             <li><a href="header.php">Header</a></li>
             <li><a href="banner.php">Banners</a></li>

@@ -1,0 +1,106 @@
+/* dashboard.css - Modern dashboard theme */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    color: #222;
+}
+
+.dashboard-header {
+    background: linear-gradient(90deg, #005bea 0%, #3ec6e0 100%);
+    color: #fff;
+    padding: 24px 32px 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.dashboard-header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.dashboard-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.dashboard-header nav a:hover {
+    color: #ffe082;
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 40px;
+}
+
+.dashboard-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #005bea;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+.dashboard-table th, .dashboard-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e6ed;
+    text-align: left;
+}
+.dashboard-table th {
+    background: #f4f6fb;
+    color: #005bea;
+    font-weight: 600;
+}
+.dashboard-table tr:hover {
+    background: #f0f7ff;
+}
+
+.dashboard-btn {
+    background: linear-gradient(90deg, #005bea 0%, #3ec6e0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-right: 8px;
+}
+.dashboard-btn:hover {
+    background: linear-gradient(90deg, #3ec6e0 0%, #005bea 100%);
+}
+
+.dashboard-card {
+    background: #f9fbfd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+    .dashboard-container {
+        padding: 16px 6px;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    .dashboard-header nav {
+        margin-top: 10px;
+    }
+}

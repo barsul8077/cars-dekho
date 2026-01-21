@@ -28,9 +28,19 @@ if (isset($_GET['delete'])) {
 }
 $headers = mysqli_query($conn, "SELECT * FROM homepage_header ORDER BY id DESC");
 ?>
-<html><head><title>Manage Header</title><link rel="stylesheet" href="../assets/style.css"></head><body>
-<button class="back-btn" onclick="window.history.back()">&#8592; Back</button>
-<div class="form-container">
+<html><head><title>Manage Header</title><link rel="stylesheet" href="../assets/dashboard.css"></head><body>
+<div class="dashboard-header">
+    <div class="logo">Admin Dashboard</div>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="header.php">Header</a>
+        <a href="banner.php">Banners</a>
+        <a href="cars.php">Cars</a>
+        <a href="footer.php">Footer</a>
+        <a href="index.php?logout=1">Logout</a>
+    </nav>
+</div>
+<div class="dashboard-container">
     <h2>Header Values</h2>
     <form method="post" enctype="multipart/form-data">
         <input type="hidden" name="id" value="">
